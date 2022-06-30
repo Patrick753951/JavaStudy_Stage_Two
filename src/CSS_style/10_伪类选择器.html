@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>伪类选择器</title>
+
+    <style>
+        /* 伪类选择器 */
+        /* :link 设置标签在未被访问前的样式 */
+        /* 注： :hover 必须放在 :link 和 :visited 之后才能生效 */
+        /* 注： :active 必须放在 :hover 之后才能生效 */
+        a:link{
+            color: green;
+        }
+
+        /* :visited 设置元素在其链接被访问过时的样式 */
+        a:visited{
+            color: brown;
+            font-size: 16px;
+        }
+
+        /* :hover 设置元素在鼠标悬停时的样式 */
+        a:hover{
+            color: red;
+            font-size: 100px;
+        }
+
+        /* :active 设置元素在被用户激活（在鼠标点击与释放之间）时的样式 */
+        a:active{
+            color: blue;
+            font-size: 150px;
+        }
+
+        /* :focus 选择获得焦点的输入字段 */
+        input:focus{
+            background-color: #A9A9A9;
+        }
+
+    </style>
+</head>
+<body>
+
+    <a href="1_CSS引入方式.html" target="_blank">点我啊</a>
+
+    <br>
+
+    用户名：<input type="text">
+    <br>
+    密码：<input type="password">
+    <br>
+    邮箱： <input type="email">
+    
+</body>
+</html>

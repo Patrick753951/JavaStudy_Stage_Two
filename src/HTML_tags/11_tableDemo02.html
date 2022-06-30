@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>表格标签</title>
+</head>
+<body>
+
+    <table border="1" align="center" cellspacing="0" cellpadding="30" width="500" bgcolor="greenyellow">
+        <!-- caption 表格的标题标签 -->
+        <caption>table demo</caption>
+        <!-- thead 表格语义化标签 -->
+        <thead>
+
+            <tr>
+                <!-- th 表格第一行，会自动加粗 -->
+                <th>row 1 col 1</th>
+                <th>row 1 col 2</th>
+                <th>row 1 col 3</th>
+            </tr>
+            
+        </thead>
+
+        <!-- tbody 表格语义化标签 -->
+        <tbody>
+
+            <tr>
+                <!-- rowspan 合并行 -->
+                <td rowspan="2">row 2 col 1</td>
+                <td>row 2 col 2</td>
+                <td>row 2 col 3</td>
+            </tr>
+
+            <tr>
+                <!-- colspan 合并列 -->
+                <td colspan="2">row 2 col 2</td>
+            </tr>
+            
+        </tbody>
+
+        <!-- tfoot 表格语义化标签 -->
+        <tfoot>
+
+            <tr>
+                <td>row 3 col 1</td>
+                <td>row 3 col 2</td>
+                <td>row 3 col 3</td>
+            </tr>
+
+        </tfoot>
+
+        </table>
+    
+</body>
+</html>
