@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>浮动</title>
+
+    <style>
+        .div1{
+            border: 1px solid red;
+            width: 200px;
+            height: 200px;
+            /* margin: 10px; */
+
+            /* 浮动 */
+            /* 使用浮动可以解决多个 div 可以放在同一行 */
+            float: left;
+        }
+
+        .div2{
+            border: 1px solid blue;
+            width: 200px;
+            height: 200px;
+
+            float: right;
+        }
+
+        .div3{
+            border: 1px solid green;
+            width: 200px;
+            height: 200px;
+
+            /* 清除浮动 */
+            /* 清除浮动并不是把设置浮动的标签清除掉，而是清除浮动标签对其他标签的影响 */
+            clear: both;
+        }
+    </style>
+</head>
+<body>
+    <div class="div1"></div>
+    <div class="div2"></div>
+    <div class="div3"></div>
+</body>
+</html>

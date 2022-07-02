@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>盒子模型_内边距</title>
+
+    <style>
+        .aaa{
+            border: 1px solid red;
+            width: 200px;
+            height: 200px;
+
+            /* 内边距 */
+            /* 内边距的复合写法，与 margin 的复合写法一样 */
+            padding-top: 50px;
+            padding-left: 50px;
+
+            /* 注：默认情况下，我们在设置内边距的时候，会影响盒子的大小，这个时候就要使用 box-sizing: border-box 保持不宽度变*/
+            box-sizing: border-box;
+        }
+
+        .bbb{
+            border: 1px solid blue;
+            width: 100px;
+            height: 100px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="aaa">
+        <div class="bbb">
+
+        </div>
+    </div>
+    
+</body>
+</html>

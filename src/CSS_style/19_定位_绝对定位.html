@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>定位_绝对定位</title>
+
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+
+        html{
+            border: 1px solid black;
+        }
+
+        .div1{
+            border: 1px solid red;
+            width: 200px;
+            height: 200px;
+        }
+
+        .div2{
+            border: 1px solid blue;
+            width: 100px;
+            height: 100px;
+
+            /* absolute 设置绝对定位 */
+            /* 绝对定位相对于最近的定位祖先元素进行定位 */
+            position: absolute;
+            top: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div class="div1">
+        <div class="div2">
+
+        </div>
+    </div>
+</body>
+</html>
