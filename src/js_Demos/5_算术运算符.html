@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>算数运算符</title>
+
+    <script>
+
+        // 算数运算符
+        // + - * / % ++ --，除了 / 和 + 之外，其余的都和 java 中相同
+
+        // /: JS 中的 /，除完之后的结果是多少就是多少
+        let i = 1;
+        let j = 2;
+        alert(i / j);
+
+        // +：JS 中的 +，除了 java 中的作用之外，还可以作为转化符
+        // 转换符的作用是对数据类型进行转换
+        // 1. string -> number
+        // 数字格式字符串
+        var a = "123";
+        alert(typeof a);
+
+        var b = +a + 12;
+        alert(b);
+        alert(typeof b)
+
+        // 非数字格式字符串
+        var c = "abc";
+        alert(typeof c);
+
+        var d = +c + 12;
+        alert(d);
+        alert(typeof d)
+
+        // 2. boolean -> number
+        // true 转换为 1， false 转换为 0
+        var e = true;
+        var f = +e;
+        alert(f);
+
+        e = false;
+        f = +e;
+        alert(f);
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

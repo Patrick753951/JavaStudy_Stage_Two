@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>比较运算符</title>
+
+    <script>
+
+        // 比较运算符
+        // 除了 == 和 ><，其他的都和 java 中一样
+
+        // js 中的 == 比较的是两个数据的结果是否是一样的
+        let i = 12;
+        let j = "12";
+        alert(i == j);
+
+        // ===， js 中的 === 比较的是两个数据的结果 和 数据类型是否一样
+        let a = 12;
+        let b = "12";
+        alert(a === b);
+
+        a = null;
+        b = undefined;
+        // null == undefined 结果为 true
+        alert(a == b);
+
+        // null == undefined 结果为 false
+        alert(a === b);
+
+
+        // > <, JS 中的 > < 可以比较字符串，按照字典顺序比较
+        a = "a";
+        b = "b";
+        alert(a > b);
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
